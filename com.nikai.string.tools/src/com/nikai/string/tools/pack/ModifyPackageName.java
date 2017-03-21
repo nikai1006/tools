@@ -5,6 +5,12 @@ import java.io.IOException;
 
 import com.nikai.string.tools.trim.TrimFile;
 
+/**
+ * 该类用来修改java文件的包名
+ * @author 尼凯
+ * @2017年3月21日
+ * @version 1.0.0
+ */
 public class ModifyPackageName
 {
 	public static void main(String[] args) throws IOException
@@ -18,6 +24,14 @@ public class ModifyPackageName
 		getfiles(new File(filepath), new File(filepath, "src"));
 	}
 
+	/**
+	 * 
+	 * @param dir
+	 * @param src
+	 * @throws IOException
+	 * @author 尼凯
+	 * @version 2017年3月21日下午10:29:14
+	 */
 	public static void getfiles(File dir, File src) throws IOException
 	{
 		// File dir = new File(directory);
@@ -43,6 +57,14 @@ public class ModifyPackageName
 
 	}
 
+	/**
+	 * 
+	 * @param filePath
+	 * @param src
+	 * @throws IOException
+	 * @author 尼凯
+	 * @version 2017年3月21日下午10:29:33
+	 */
 	public static void modifyfiles(String filePath, File src)
 			throws IOException
 	{
